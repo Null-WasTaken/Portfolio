@@ -13,7 +13,7 @@ export default function Sidebar() {
 
     return (
 
-        <div className="flex justify-around items-center gap-4 z-50">
+        <div className="flex justify-around h-full items-center gap-4 z-50">
             <span className="text-4xl text-marsh"><FaCube /></span>
             <div className="flex">
                 <a href="#" className="text-marsh uppercase tracking-widest " onClick={() => {
@@ -24,19 +24,21 @@ export default function Sidebar() {
                 }}><IoIosArrowRoundForward /></span>
             </div>
 
-            <div className={sidebar ? "absolute flex flex-col items-start text-marsh top-0 bg-[#000] left-0 h-screen w-[400px] transition-all" : "absolute -left-96"}>
+            <div className={sidebar ? "fixed flex flex-col items-start text-marsh top-0 bg-[#000] left-0 min-h-[100vh] w-[400px] transition-all duration-[1.3s] z-[1910]" : "fixed flex flex-col items-start text-marsh top-0 bg-[#000] -left-[25rem] min-h-[100vh] w-[400px] transition-all duration-[1.3s] z-[1910]"}>
+
                 <div className="flex items-center justify-between w-full">
-                    <a href="#" className="text-4xl p-4 transition-all hover:pl-7">Home</a>
-                    <span className="mr-7 text-3xl cursor-pointer" onClick={() => {
+                    <a href="#" className="text-4xl pl-7 p-4 transition-all hover:underline"></a>
+                    <span className="mr-7 text-4xl mt-3 cursor-pointer" onClick={() => {
                         setSidebar(!sidebar )
                     }}><IoClose /></span>
                 </div>
-                <a href="#" className="text-4xl p-4 transition-all hover:pl-7">Resume</a>
-                <a href="#" className="text-4xl p-4 transition-all hover:pl-7">Projects</a>
+                <a href="#" className="text-4xl pl-7 p-4 transition-all hover:pl-10">Home</a>
+                <a href="#" className="text-4xl pl-7 p-4 transition-all hover:pl-10">Resume</a>
+                <a href="#" className="text-4xl pl-7 p-4 transition-all hover:pl-10">Projects</a>
                 <div className="flex flex-row">
-                    <span className="text-4xl p-4 transition-all hover:text-5xl cursor-pointer"><FaGithub /></span>
-                    <span className="text-4xl p-4 transition-all hover:text-5xl cursor-pointer"><FaInstagram /></span>
-                    <span className="text-4xl p-4 transition-all hover:text-5xl cursor-pointer"><FaLinkedin /></span>
+                    <span className="text-4xl pl-7 p-4 transition-all hover:text-5xl cursor-pointer"><FaGithub /></span>
+                    <span className="text-4xl pl-7 p-4 transition-all hover:text-5xl cursor-pointer"><FaInstagram /></span>
+                    <span className="text-4xl pl-7 p-4 transition-all hover:text-5xl cursor-pointer"><FaLinkedin /></span>
 
                 </div>
             </div>
