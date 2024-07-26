@@ -33,8 +33,10 @@ export default function Sidebar() {
                     }}><IoClose /></span>
                 </div>
                 <a href="#" className="text-4xl pl-7 p-4 transition-all hover:pl-10">Home</a>
-                <a href="#" className="text-4xl pl-7 p-4 transition-all hover:pl-10">Resume</a>
+                <a href="#" className="text-4xl pl-7 p-4 transition-all hover:pl-10">About</a>
                 <a href="#" className="text-4xl pl-7 p-4 transition-all hover:pl-10">Projects</a>
+                <a href="#" className="text-4xl pl-7 p-4 transition-all hover:pl-10">FAQ</a>
+
                 <div className="flex flex-row">
                     <span className="text-4xl pl-7 p-4 transition-all hover:text-5xl cursor-pointer"><FaGithub /></span>
                     <span className="text-4xl pl-7 p-4 transition-all hover:text-5xl cursor-pointer"><FaInstagram /></span>

@@ -1,4 +1,3 @@
-import ProjectImg from "../MobileModal/Assets/Images/DaveDesktop.png";
 import {GrGithub} from "react-icons/gr";
 
 
