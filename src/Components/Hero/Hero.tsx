@@ -26,12 +26,11 @@ export default  function Hero() {
 
             <div className="flex flex-col items-center justify-around h-[550px] p-5 absolute top-52 z-20 w-[550px] bg-[#000] opacity-[0.9] rounded md:w-[936px] md:items-start md:h-[450px] md:p-9">
                 <h3 className="text-5xl text-marsh">Hi Im Amir & I'm A <br/> <span className="text-white">{typedHeading}</span><Cursor cursorColor="white"/></h3>
-                <p className="text-xl text-marsh font-light z-40 w-[660px] min-h-[168px]">{typedPara}<Cursor cursorColor="white"/></p>
+                <p className="text-xl text-marsh font-light z-40 md:w-[660px] min-h-[168px]">{typedPara}<Cursor cursorColor="white"/></p>
                 <div className=" w-full h-full top-[67px] left-80 absolute z-10 hidden md:block">
                     <Canvas>
                         <directionalLight position={[0,0,2]} />
                         <ambientLight/>
-
                         <Cube color="white" side={[0,0,0]} size={[1.9,1.9,1.9]} />
                     </Canvas>
                 </div>
